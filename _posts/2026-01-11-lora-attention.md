@@ -70,13 +70,15 @@ This implementation makes the geometry explicit: queries and keys interact via d
 ## LoRA in Attention Layer
 
 LoRA modifies a projection matrix $W \in \mathbb{R}^{d \times d}$ as:
+
 $$
 W' = W + BA
 $$
+
 where:
-    - $A \in \mathbb{R}^{r \times d}$
-    - $B \in \mathbb{R}^{d \times r}$
-    - $r \ll d$
+- $A \in \mathbb{R}^{r \times d}$
+- $B \in \mathbb{R}^{d \times r}$
+- $r \ll d$
 
 The update $\Delta W = BA$ has rank at most $r$, constraining learning to a low-dimensional subspace.
 
@@ -112,17 +114,23 @@ Keys and values remain unchanged. Any change in attention behavior must therefor
 
 ## Effect on Attention Scores
 Recall that attention scores are computed as:
+
 $$
 S = \frac{Q K^\top}{\sqrt{d}}
 $$
+
 With LoRA applied:
+
 $$
 Q' = Q + \Delta Q 
 $$
+
 This introduces an additive term:
+
 $$
 S' = \frac{(Q + \Delta Q) K^\top}{\sqrt{d}}
 $$
+
 Importantly, LoRA does not rewrite the score matrix arbitrarily; it introduces a structured, low-rank perturbation.
 
 ## Empirical Evidence: How LoRA Alters Attention Geometry
