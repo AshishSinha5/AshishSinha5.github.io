@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Democratizing LLM Inference with Quantization Techniques"
-date: 2026-01-11 10:00:00 +0530
+date: 2026-01-18 10:00:00 +0530
 category: blog
 headerImage: false
 tag:
