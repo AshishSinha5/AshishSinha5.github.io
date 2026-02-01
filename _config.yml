@@ -57,7 +57,7 @@ authors:
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
-width: normal
+width: large
 
 # if you do/don't need pagination, toggle 'enabled' between true/false below
 pagination:
@@ -69,10 +69,6 @@ pagination:
 
 # if you don't need projects, comment the *projects* configs below
 # projects: true
-
-collections:
-  notebooks:
-    output: false
 
 # if you don't need "about" or "blog", comment them out below
 about: true
