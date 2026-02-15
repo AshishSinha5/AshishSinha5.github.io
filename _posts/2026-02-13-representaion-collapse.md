@@ -243,7 +243,7 @@ for step in range(500):
 
 Initially, variance is high. As training progresses, variance approaches zero, indicating collapse.
 
-![Variance Plot](/assets/images/var_plot.jpg?style=centerme)
+![Variance Plot](/assets/images/var_plot.png?style=centerme)
 
 Variance decreases steadily, the model converges to a collapsed state.
 
@@ -670,7 +670,7 @@ for step in range(500):
 
 Initially, eigenvalues are spread out. As training progresses, smaller eigenvalues increase, preventing collapse.
 
-![Eigenvalue Plot](/assets/images/val_plot_after_infonce.jpg?style=centerme)
+![Eigenvalue Plot](/assets/images/val_plot_after_infonce.png?style=centerme)
 
 --- 
 
